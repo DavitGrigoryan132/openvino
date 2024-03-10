@@ -484,3 +484,7 @@ extern template bool evaluate_node<ov::op::internal::AUGRUCell>(std::shared_ptr<
 extern template bool evaluate_node<ov::op::internal::AUGRUSequence>(std::shared_ptr<ov::Node> node,
                                                                     ov::TensorVector& outputs,
                                                                     const ov::TensorVector& inputs);
+
+extern template bool evaluate_node<ov::op::v14::RGBtoNV12>(std::shared_ptr<ov::Node> node,
+                                                           ov::TensorVector& outputs,
+                                                           const ov::TensorVector& inputs);
